@@ -30,6 +30,8 @@ public class CustomBindingProvider implements BindingsValuesProvider {
 			// adapt this to MyCustomPage, and add this to the bindings
 			bindings.put("pageName", current.getName());
 			bindings.put("myPage", current.adaptTo(MyCustomPage.class));
+			// you can now refer to pageName and myPage in every HTML file
+			// example ${pageName} ${myPage.title}
 		}
 	}
 }
