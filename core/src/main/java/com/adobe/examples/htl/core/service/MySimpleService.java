@@ -14,7 +14,7 @@ public class MySimpleService {
 	//
 	// ${service.simpleValue}
 	//
-	// https://issues.apache.org/jira/browse/SLING-4554?
+	// https://issues.apache.org/jira/browse/SLING-4554
 	
 	public String getSimpleValue() {
 		return "hello";
