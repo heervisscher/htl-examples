@@ -41,8 +41,10 @@ public class LayoutSwitcher implements ResourceDecorator {
 			if ( StringUtils.isNotBlank( scriptFolder) && StringUtils.isNotBlank(componentName)) {
 				String newComponentName = scriptFolder + "/" + componentName;
 				
+				// check if there is a local version available, if so then use this		
 				if ( resource.getResourceResolver().getResource(newComponentName) != null ) {
 					LayoutResource lr = new LayoutResource(resource);
+					// overriding the resource-type
 					lr.setSlingResourceType(newComponentName);
 					
 					return lr;
@@ -55,15 +57,9 @@ public class LayoutSwitcher implements ResourceDecorator {
 
 	private String getSlingScriptFolder(Resource resource) {
 		
-		String scriptFolder = null;
-		Resource r = resource;
+		InheritanceValueMap ivp = new HierarchyNodeInheritanceValueMap(resource);
 		
-		InheritanceValueMap ivp = new HierarchyNodeInheritanceValueMap(r);
-		
-		scriptFolder = ivp.getInherited(SLING_SCRIPT_FOLDER, String.class);
-
-		return scriptFolder;
-
+		return ivp.getInherited(SLING_SCRIPT_FOLDER, String.class);
 	}
 
 	@Override
