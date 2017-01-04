@@ -22,7 +22,7 @@ public class Parsys extends WCMUsePojo {
 	
 	public List<Paragraph> getParagraphs() {
 		return parSys.paragraphs();
-	}
+	}	
 	
 	
 	@Override
