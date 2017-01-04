@@ -30,8 +30,6 @@ public class HashMapExample extends WCMUsePojo {
 		m2.put("cq", "5.5");
 		m2.put("cq5", "5.4");
 		map.put("b", m2);
-
-		// map.keySet().iterator()
 	}
 
 }
