@@ -21,6 +21,7 @@ public class HashMapExample extends WCMUsePojo {
 	
 	
 	@Override
+	@SuppressWarnings("unchecked")
 	public void activate() {
 		HashMap m1 = new HashMap<>();
 		m1.put("aem", "6.1");
