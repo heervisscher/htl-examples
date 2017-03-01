@@ -9,7 +9,8 @@ import com.adobe.cq.sightly.WCMBindings;
 import com.adobe.examples.htl.core.models.MyCustomPage;
 import com.day.cq.wcm.api.Page;
 
-@Component(immediate = true, service=BindingsValuesProvider.class, property={"javax.script.name=sightly","service.ranking=1001"})
+@Component(immediate = true, service=BindingsValuesProvider.class, 
+    property={"javax.script.name=sightly","service.ranking=1001"})
     // in AEM6.2 service ranking was set to 1001
     // in AEM6.0 service ranking was set to 100
 public class CustomBindingProvider implements BindingsValuesProvider {
