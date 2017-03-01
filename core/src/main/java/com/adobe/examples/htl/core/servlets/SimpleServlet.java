@@ -15,15 +15,17 @@
  */
 package com.adobe.examples.htl.core.servlets;
 
-import org.apache.felix.scr.annotations.sling.SlingServlet;
+import java.io.IOException;
+
+import javax.servlet.Servlet;
+import javax.servlet.ServletException;
+
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
 import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
-
-import javax.servlet.ServletException;
-import java.io.IOException;
+import org.osgi.service.component.annotations.Component;
 
 /**
  * Servlet that writes some sample content into the response. It is mounted for
@@ -32,8 +34,9 @@ import java.io.IOException;
  * idempotent. For write operations use the {@link SlingAllMethodsServlet}.
  */
 @SuppressWarnings("serial")
-@SlingServlet(resourceTypes = "aemhtlexamples/structure/page")
+@Component(service=Servlet.class, property="resourceTypes=aemhtlexamples/structure/page")
 public class SimpleServlet extends SlingSafeMethodsServlet {
+	
 
     @Override
     protected void doGet(final SlingHttpServletRequest req,

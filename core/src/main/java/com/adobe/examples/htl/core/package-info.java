@@ -18,4 +18,4 @@
 package com.adobe.examples.htl.core;
 
 import aQute.bnd.annotation.Export;
-import aQute.bnd.annotation.Version;
+import org.osgi.annotation.versioning.Version;

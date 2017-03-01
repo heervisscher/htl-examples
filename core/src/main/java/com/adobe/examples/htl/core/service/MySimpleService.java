@@ -1,12 +1,10 @@
 package com.adobe.examples.htl.core.service;
 
-import org.apache.felix.scr.annotations.Component;
-import org.apache.felix.scr.annotations.Reference;
-import org.apache.felix.scr.annotations.Service;
 import org.apache.sling.api.resource.ResourceResolverFactory;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
 
-@Service(value=MySimpleService.class)
-@Component
+@Component(service=MySimpleService.class)
 public class MySimpleService {
 	
 	
