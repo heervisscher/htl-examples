@@ -1,0 +1,8 @@
+<!--/** Shows example of https://issues.apache.org/jira/browse/SLING-5813
+using a path directly in data-sly-use  */-->
+<a data-sly-test="${ properties.linkTo }" 
+   data-sly-test.linkToPage="${ '{0}/jcr:content' @ format=properties.linkTo}"
+   data-sly-use.button="${ linkToPage }"
+   class="btn btn-primary btn-action cq-dd-linkTo ${properties.cssClass}"
+   href="${properties.linkPage @ extension = 'html'}" 
+   role="button">${button.jcr:title}</a>
