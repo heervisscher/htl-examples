@@ -17,7 +17,7 @@ import org.apache.sling.models.annotations.injectorspecific.Self;
 public class PageExporterImpl implements PageExporter{
 	
 	// you can now call the following url
-	// /content/we-retail/us/en/women/_jcr_content.pageinfo.json
+	// /content/we-retail/us/en/products/women/_jcr_content.pageinfo.json
 	//
 	
 	@Self
