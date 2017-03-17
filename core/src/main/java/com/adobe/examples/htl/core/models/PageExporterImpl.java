@@ -13,6 +13,10 @@ import org.apache.sling.models.annotations.Optional;
 @Exporter(name = "jackson", extensions = "json", selector="pageinfo")
 public class PageExporterImpl implements PageExporter{
 	
+	// you can now call the following url
+	// /content/we-retail/us/en/women/_jcr_content.pageinfo.json
+	//
+	
 	@Inject @Named("jcr:title")
 	private String title;
 	
