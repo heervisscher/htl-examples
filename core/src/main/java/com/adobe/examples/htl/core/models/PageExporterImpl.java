@@ -26,7 +26,6 @@ public class PageExporterImpl implements PageExporter{
 	@Inject @Named("jcr:title")
 	private String title;
 	
-	@Inject
 	private String name;
 	
 	private String path;
@@ -41,9 +40,6 @@ public class PageExporterImpl implements PageExporter{
 	}
 	
 	private void processChild(Resource r) {
-		if ("jcr:content".equals(r.getName())) {
-			return;
-		}
 		Resource jcrContent = r.getChild("jcr:content");
 		if ( jcrContent != null) {
 			children.add(jcrContent.adaptTo(PageExporter.class));
