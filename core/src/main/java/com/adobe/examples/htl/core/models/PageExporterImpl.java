@@ -25,17 +25,11 @@ public class PageExporterImpl implements PageExporter{
 	
 	@Inject @Named("jcr:title")
 	private String title;
-	
-	private String name;
-	
-	private String path;
-	
+		
 	private List<PageExporter> children = new ArrayList<>();
 
 	@PostConstruct
 	protected void init() {
-		path = resource.getPath();
-		name = resource.getParent().getName();
 		resource.getParent().listChildren().forEachRemaining(resource -> processChild(resource) );
 	}
 	
@@ -52,11 +46,11 @@ public class PageExporterImpl implements PageExporter{
 
 	@Override
 	public String getPath() {
-		return path;
+		return resource.getPath();
 	}
 
 	public String getName() {
-		return name;
+		return resource.getParent().getName();
 	}
 
 	@Override
