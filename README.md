@@ -3,7 +3,7 @@ AEM HTL examples
 
 ## Included examples
 
-### [CustomBindingProvider](blob/master/core/src/main/java/com/adobe/examples/htl/core/bindings/CustomBindingProvider.java)
+### [CustomBindingProvider](/heervisscher/htl-examples/blob/master/core/src/main/java/com/adobe/examples/htl/core/bindings/CustomBindingProvider.java)
 Provides an example of a CustomBindingProvider, this if you want generic objects available in HTL
 
 ### HashMapExample
