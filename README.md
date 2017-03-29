@@ -24,7 +24,7 @@ Validating HTL-files during build process
 ### [AutoCloseable](/core/src/main/java/com/adobe/examples/htl/core/service/AutoCloseableService.java)
 Example on using AutoCloseable functionality, no need to close ResourceResolvers in code
 
-### Date-formatting (/ui.apps/src/main/content/jcr_root/apps/aemhtlexamples/components/aem6.3/formatting/formatting.html)
+### [Date-formatting](/ui.apps/src/main/content/jcr_root/apps/aemhtlexamples/components/aem6.3/formatting/formatting.html)
 Formatting your date-objects in HTL
 
 ### [Number-formatting](/ui.apps/src/main/content/jcr_root/apps/aemhtlexamples/components/aem6.3/formatting/formatting.html)
