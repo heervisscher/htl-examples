@@ -15,7 +15,7 @@ import org.apache.sling.models.annotations.Model;
  * <sly data-sly-use.date="${'com.adobe.examples.htl.core.formatter.DateFormatter' @ date=currentPage.lastModified,
      format='dd/MM/yyyy'}">${date.value}</sly>
  * 
- * 
+ * NOTE: In AEM6.3 you have native support for number/date formatting
  */
 @Model(adaptables=SlingHttpServletRequest.class)
 public class DateFormatter {

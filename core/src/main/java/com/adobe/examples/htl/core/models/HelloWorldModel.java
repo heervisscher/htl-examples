@@ -32,7 +32,7 @@ public class HelloWorldModel {
 
     @Inject @Named("sling:resourceType") @Default(values="No resourceType")
     protected String resourceType;
-
+    
     private String message;
 
     @PostConstruct
