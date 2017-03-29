@@ -1,0 +1,9 @@
+Productdetails:
+
+<ul data-sly-list="${ request.attributeNames }">
+ <li data-sly-test="${ item == 'layout'}">${item}</li>
+</ul>
+
+<div data-sly-use.layoutSetting="com.adobe.examples.htl.core.models.ProductSettings">
+${layoutSetting.layout}
+</div>

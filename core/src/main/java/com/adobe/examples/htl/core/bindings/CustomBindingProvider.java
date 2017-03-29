@@ -14,6 +14,7 @@ import com.day.cq.wcm.api.Page;
     property={"javax.script.name=sightly", Constants.SERVICE_RANKING +":Integer=1001"})
     // in AEM6.2 service ranking was set to 1001
     // in AEM6.0 service ranking was set to 100
+	// make sure
 public class CustomBindingProvider implements BindingsValuesProvider {
 	
 	@Override
