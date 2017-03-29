@@ -9,6 +9,9 @@ import com.adobe.examples.htl.core.service.MySimpleService;
 @Component(service = MySimpleService.class)
 @Designate(ocd = MyServiceConfiguration.class)
 public class MySimpleServiceImpl implements MySimpleService {
+	
+	// to use the OSGi annotations
+	// use version 3.2.0 of maven-bundle-plugin
 
 	private MyServiceConfiguration config;
 
