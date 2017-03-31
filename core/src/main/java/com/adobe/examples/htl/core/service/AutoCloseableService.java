@@ -19,7 +19,6 @@ public class AutoCloseableService {
 		try (ResourceResolver rr = repo.getAdministrativeResourceResolver(null)) {
 			return rr.getUserID();
 		} catch (LoginException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return StringUtils.EMPTY;

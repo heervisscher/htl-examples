@@ -415,20 +415,6 @@
 				<scope>provided</scope>
 			</dependency>
 
-			<!-- AEM6.x dependency -->
-			<dependency>
-				<groupId>com.adobe.aem</groupId>
-				<artifactId>uber-jar</artifactId>
-				<version>6.2.0-SP1</version>
-				<!-- for AEM6.1 use this version : <version>6.1.0</version> -->
-				<!-- for AEM6.1 SP1 use this version : <version>6.1.0-SP1-B0001</version> -->
-				<!-- for AEM6.1 SP2 use this version : <version>6.1.0-SP2</version> -->
-				<!-- for AEM6.1 SP2 + CFP2 use this version : <version>6.1.SP2-CFP2</version> -->
-				<!-- for AEM6.2 use this version : <version>6.2.0</version> -->
-				<!-- for AEM6.2 SP1 use this version : <version>6.2.0-SP1</version> -->
-				<classifier>apis</classifier>
-				<scope>provided</scope>
-			</dependency>
 
 			<!-- needed for javax.Inject in AEM6.2 -->
 			<dependency>
