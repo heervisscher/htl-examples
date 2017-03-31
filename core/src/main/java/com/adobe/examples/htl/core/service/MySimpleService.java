@@ -12,4 +12,6 @@ public interface MySimpleService {
 	// https://issues.apache.org/jira/browse/SLING-4554
 		
 	String getSimpleValue();
+	
+	boolean isAuthor();
 }
