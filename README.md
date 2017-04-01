@@ -44,7 +44,9 @@ Example that shows the resolution of resources directly in HTL
 Passing in request-attributes to data-sly-resource
 
 ### [OSGi annotations](/core/src/main/java/com/adobe/examples/htl/core/service/impl/MySimpleServiceImpl.java)
-Example of the OSGi annotations, easy way to define OSGi properties
+Example of the OSGi annotations, easy way to define OSGi properties.
+Properties defined in [MyServiceConfiguration.java](/core/src/main/java/com/adobe/examples/htl/core/service/impl/MyServiceConfiguration), default config [here](/ui.apps/src/main/content/jcr_root/apps/aemhtlexamples/config/com.adobe.examples.htl.core.service.impl.MySimpleServiceImpl.xml)
+
 
 ### [Java8 Iterator example](/core/src/main/java/com/adobe/examples/htl/core/java8iterator/Java8Iterator.java)
 Use of a lambda expression that is supported in Java8
