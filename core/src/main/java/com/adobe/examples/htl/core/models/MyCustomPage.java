@@ -2,6 +2,8 @@ package com.adobe.examples.htl.core.models;
 
 import java.util.Iterator;
 
+import javax.annotation.PostConstruct;
+
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.Self;
 
@@ -14,8 +16,15 @@ public class MyCustomPage {
 	@Self
 	private Page page;
 	
+	private String title;
+	
+	@PostConstruct
+	protected void init() {
+		title = "MyProject : " + page.getTitle();
+	}
+	
 	public String getTitle() {
-		return "MyProject : " + page.getTitle();
+		return title;
 	}
 	
 	public Iterator<Page> getChildPages() {
