@@ -1,6 +1,13 @@
 # htl-examples
 AEM HTL examples
 
+### AEM compatibility
+The package is only compatible with AEM6.3, this because new features are used that are only available in AEM6.3
+- Exporter
+- getInheritedPageProperties() in WCMUsePojo
+- getLanguage() in Page-api
+
+
 ## Included examples
 
 ### [CustomBindingProvider](/core/src/main/java/com/adobe/examples/htl/core/bindings/CustomBindingProvider.java)
