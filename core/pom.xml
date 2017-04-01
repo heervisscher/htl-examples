@@ -32,8 +32,10 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
+					`   <Import-Package>javax.annotation;resolution:=optional</Import-Package>
 						<!-- <Embed-Dependency> artifactId1, artifactId2;inline=true </Embed-Dependency> -->
 						<Sling-Model-Packages>com.adobe.examples.htl.core</Sling-Model-Packages>
+						
 					</instructions>
 				</configuration>
 			</plugin>
@@ -63,16 +65,29 @@
 		</profile>
 	</profiles>
 	<dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+		</dependency>
 
 		<dependency>
-			<groupId>org.apache.geronimo.specs</groupId>
-			<artifactId>geronimo-atinject_1.0_spec</artifactId>
+			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.fragment.ws</artifactId>
+			<version>1.0.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.service.component.annotations</artifactId>
 		</dependency>
+
 
 		<dependency>
 			<groupId>org.osgi</groupId>
@@ -89,6 +104,7 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>3.0</version>
+			<scope>provided</scope>
 		</dependency>
 
 
@@ -109,35 +125,10 @@
 			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.core</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.osgi</groupId>
-			<artifactId>org.osgi.compendium</artifactId>
-		</dependency>
 		<!-- Other Dependencies -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>javax.jcr</groupId>
-			<artifactId>jcr</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-all</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>junit-addons</groupId>
-			<artifactId>junit-addons</artifactId>
 		</dependency>
 
 		<dependency>
