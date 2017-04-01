@@ -45,7 +45,7 @@ Passing in request-attributes to data-sly-resource
 
 ### [OSGi annotations](/core/src/main/java/com/adobe/examples/htl/core/service/impl/MySimpleServiceImpl.java)
 Example of the OSGi annotations, easy way to define OSGi properties.
-Properties defined in [MyServiceConfiguration.java](/core/src/main/java/com/adobe/examples/htl/core/service/impl/MyServiceConfiguration), default config [here](/ui.apps/src/main/content/jcr_root/apps/aemhtlexamples/config/com.adobe.examples.htl.core.service.impl.MySimpleServiceImpl.xml)
+Properties defined in [MyServiceConfiguration.java](/core/src/main/java/com/adobe/examples/htl/core/service/impl/MyServiceConfiguration.java), default config [here](/ui.apps/src/main/content/jcr_root/apps/aemhtlexamples/config/com.adobe.examples.htl.core.service.impl.MySimpleServiceImpl.xml)
 
 
 ### [Java8 Iterator example](/core/src/main/java/com/adobe/examples/htl/core/java8iterator/Java8Iterator.java)
