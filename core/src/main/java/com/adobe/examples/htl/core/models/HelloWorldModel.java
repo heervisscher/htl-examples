@@ -16,33 +16,46 @@
 package com.adobe.examples.htl.core.models;
 
 import javax.annotation.PostConstruct;
-import javax.inject.Inject;
-import javax.inject.Named;
 
 import org.apache.sling.api.resource.Resource;
+import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.injectorspecific.InjectionStrategy;
+import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.apache.sling.models.annotations.injectorspecific.SlingObject;
+import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import org.apache.sling.settings.SlingSettingsService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Model(adaptables=Resource.class)
 public class HelloWorldModel {
+	
+	private static Logger log = LoggerFactory.getLogger(HelloWorldModel.class);
 
-    @Inject
+    @OSGiService
     private SlingSettingsService settings;
+    
+    @SlingObject
+    private ResourceResolver resourceResolver;
 
-    @Inject @Named("sling:resourceType") @Default(values="No resourceType")
-    protected String resourceType;
+    @ValueMapValue(name = "sling:resourceType", injectionStrategy=InjectionStrategy.OPTIONAL) @Default(values="No resourceType")
+    private String resourceType;
     
     private String message;
 
     @PostConstruct
     protected void init() {
+    	log.info("Reached init of HelloWorldModel");
         message = "\tHello World!\n";
         message += "\tThis is instance: " + settings.getSlingId() + "\n";
         message += "\tResource type is: " + resourceType + "\n";
+        message += "\tUser id is " + resourceResolver.getUserID() + "\n";
     }
 
     public String getMessage() {
+    	log.info("Inside getMessage() method");
         return message;
     }
 }
