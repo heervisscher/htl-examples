@@ -32,10 +32,8 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-					`   <Import-Package>javax.annotation;resolution:=optional,*</Import-Package>
 						<!-- <Embed-Dependency> artifactId1, artifactId2;inline=true </Embed-Dependency> -->
 						<Sling-Model-Packages>com.adobe.examples.htl.core</Sling-Model-Packages>
-						
 					</instructions>
 				</configuration>
 			</plugin>
@@ -69,19 +67,7 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
 		</dependency>
-		
-		<dependency>
-	<groupId>org.apache.sling</groupId>
-	<artifactId>org.apache.sling.scripting.api</artifactId>
-	<version>2.1.12</version>
-	<scope>provided</scope>
-</dependency>
 
-		<dependency>
-			<groupId>org.apache.sling</groupId>
-			<artifactId>org.apache.sling.fragment.ws</artifactId>
-			<version>1.0.2</version>
-		</dependency>
 
 		<dependency>
 			<groupId>javax.inject</groupId>
@@ -104,6 +90,13 @@
 		<dependency>
 			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.annotation</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.code.findbugs</groupId>
+			<artifactId>jsr305</artifactId>
+			<version>2.0.0</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
