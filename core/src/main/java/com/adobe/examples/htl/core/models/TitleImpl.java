@@ -1,0 +1,31 @@
+package com.adobe.examples.htl.core.models;
+
+import com.adobe.cq.wcm.core.components.models.Constants;
+import com.adobe.cq.wcm.core.components.models.Title;
+import org.apache.sling.api.SlingHttpServletRequest;
+import org.apache.sling.models.annotations.Exporter;
+import org.apache.sling.models.annotations.Model;
+
+/**
+ * This is an implementation if the Title-model.
+ * Because we can now link the model to the resourceType,
+ * this model will be used by the component.
+ * See that no extra changes are needed in the proxy component
+ * (/apps/aemhtlexamples/components/content/title).
+ */
+@Model(adaptables = SlingHttpServletRequest.class, adapters = Title.class, resourceType = TitleImpl.RESOURCE_TYPE)
+@Exporter(name = Constants.EXPORTER_NAME, extensions = Constants.EXPORTER_EXTENSION)
+public class TitleImpl implements Title {
+
+    protected static final String RESOURCE_TYPE = "aemhtlexamples/components/content/title";
+
+    @Override
+    public String getText() {
+        return "This is the title from the new implementation";
+    }
+
+    @Override
+    public String getType() {
+        return null;
+    }
+}
