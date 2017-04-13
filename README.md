@@ -41,7 +41,7 @@ Formatting numbers in HTL
 Example that shows the resolution of resources directly in HTL
 
 ### [RequestAttributes](/ui.apps/src/main/content/jcr_root/apps/aemhtlexamples/components/aem6.3/product/product.html)
-Passing in request-attributes to data-sly-resource
+Passing in request-attributes to data-sly-resource and data-sly-include
 
 ### [OSGi annotations](/core/src/main/java/com/adobe/examples/htl/core/service/impl/MySimpleServiceImpl.java)
 Example of the OSGi annotations, easy way to define OSGi properties.
@@ -50,3 +50,6 @@ Properties defined in [MyServiceConfiguration.java](/core/src/main/java/com/adob
 
 ### [Java8 Iterator example](/core/src/main/java/com/adobe/examples/htl/core/java8iterator/Java8Iterator.java)
 Use of a lambda expression that is supported in Java8
+
+### [Custom Sling-Model for the Title-component](/core/src/main/java/com/adobe/examples/htl/core/models/TitleImpl.java)
+Example of a custom Sling-Model implementation, that is picked up from the core components.
