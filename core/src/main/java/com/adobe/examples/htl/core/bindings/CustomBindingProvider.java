@@ -14,9 +14,8 @@ import com.day.cq.wcm.api.Page;
 
 @Component(immediate = true, service=BindingsValuesProvider.class, 
     property={"javax.script.name=sightly", Constants.SERVICE_RANKING +":Integer=1001"})
-    // in AEM6.2 service ranking was set to 1001
-    // in AEM6.0 service ranking was set to 100
-	// make sure
+    // in AEM6.2+ service ranking needs to be 1001
+    // in AEM6.0 service ranking needs to be 100
 public class CustomBindingProvider implements BindingsValuesProvider {
 	
 	private static Logger log = LoggerFactory.getLogger(CustomBindingProvider.class);
