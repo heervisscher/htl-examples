@@ -68,19 +68,15 @@
 			<artifactId>servlet-api</artifactId>
 		</dependency>
 
-
 		<dependency>
 			<groupId>javax.inject</groupId>
 			<artifactId>javax.inject</artifactId>
-			<version>1</version>
-			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.service.component.annotations</artifactId>
 		</dependency>
-
 
 		<dependency>
 			<groupId>org.osgi</groupId>

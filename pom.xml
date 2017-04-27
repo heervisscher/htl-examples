@@ -415,7 +415,7 @@
 				<scope>provided</scope>
 			</dependency>
 
-			<!-- depedency for AEM6.3 -->
+			<!-- dependency for AEM6.3 -->
 			<dependency>
 				<groupId>com.adobe.aem</groupId>
 				<artifactId>uber-jar</artifactId>
@@ -424,13 +424,11 @@
 				<scope>provided</scope>
 			</dependency>
 
-
-
 			<!-- needed for javax.Inject -->
 			<dependency>
-				<groupId>org.apache.geronimo.specs</groupId>
-				<artifactId>geronimo-atinject_1.0_spec</artifactId>
-				<version>1.0</version>
+				<groupId>javax.inject</groupId>
+				<artifactId>javax.inject</artifactId>
+				<version>1</version>
 				<scope>provided</scope>
 			</dependency>
 
