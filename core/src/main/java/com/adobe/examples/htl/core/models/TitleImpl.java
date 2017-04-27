@@ -7,7 +7,7 @@ import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
 
 /**
- * This is an implementation if the Title-model.
+ * This is an implementation of the Title-model.
  * Because we can now link the model to the resourceType,
  * this model will be used by the component.
  * See that no extra changes are needed in the proxy component
