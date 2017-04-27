@@ -99,6 +99,7 @@
 				<version>1.0.6</version>
 				<configuration>
 					<sourceDirectory>${basedir}/src/main/content/jcr_root</sourceDirectory>
+					<failOnWarnings>false</failOnWarnings>
 				</configuration>
 				<executions>
 					<execution>
