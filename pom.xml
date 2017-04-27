@@ -425,6 +425,7 @@
 			</dependency>
 
 
+
 			<!-- needed for javax.Inject -->
 			<dependency>
 				<groupId>org.apache.geronimo.specs</groupId>
