@@ -48,11 +48,11 @@ Example of the OSGi annotations, easy way to define OSGi properties.
 Properties defined in [MyServiceConfiguration.java](/core/src/main/java/com/adobe/examples/htl/core/service/impl/MyServiceConfiguration.java), default config [here](/ui.apps/src/main/content/jcr_root/apps/aemhtlexamples/config/com.adobe.examples.htl.core.service.impl.MySimpleServiceImpl.xml)
 
 
-### [Java8 Iterator example](/core/src/main/java/com/adobe/examples/htl/core/java8iterator/Java8Iterator.java)
+### [Java8 Iterator](/core/src/main/java/com/adobe/examples/htl/core/java8iterator/Java8Iterator.java)
 Use of a lambda expression that is supported in Java8
 
 ### [Custom Sling-Model for the Title-component](/core/src/main/java/com/adobe/examples/htl/core/models/TitleImpl.java)
 Example of a custom Sling-Model implementation, that is picked up from the core components.
 
-### [CompositeValueMap example](/core/src/main/java/com/adobe/examples/htl/core/models/CompositeValueMapModel.java)
+### [CompositeValueMap](/core/src/main/java/com/adobe/examples/htl/core/models/CompositeValueMapModel.java)
 Example on using the CompositeValueMap to merge properties of two ValueMaps
