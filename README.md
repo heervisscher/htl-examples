@@ -54,5 +54,5 @@ Use of a lambda expression that is supported in Java8
 ### [Custom Sling-Model for the Title-component](/core/src/main/java/com/adobe/examples/htl/core/models/TitleImpl.java)
 Example of a custom Sling-Model implementation, that is picked up from the core components.
 
-### [CompositeValueMap example] (/master/core/src/main/java/com/adobe/examples/htl/core/models/CompositeValueMapModel.java)
+### [CompositeValueMap example] (/core/src/main/java/com/adobe/examples/htl/core/models/CompositeValueMapModel.java)
 Example on using the CompositeValueMap to merge properties of two ValueMaps
