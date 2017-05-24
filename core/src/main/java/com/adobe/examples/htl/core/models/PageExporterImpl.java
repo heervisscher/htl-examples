@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
-import javax.inject.Inject;
-import javax.inject.Named;
 
 import org.apache.sling.api.resource.Resource;
+import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.Self;
+import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 @Model(adaptables=Resource.class,resourceType="weretail/components/structure/page",adapters=PageExporter.class)
 @Exporter(name = "jackson", extensions = "json", selector="pageinfo")
@@ -23,7 +23,7 @@ public class PageExporterImpl implements PageExporter{
 	@Self
 	private Resource resource;
 	
-	@Inject @Named("jcr:title")
+	@ValueMapValue(name="jcr:title")
 	private String title;
 		
 	private List<PageExporter> children = new ArrayList<>();
