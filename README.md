@@ -55,4 +55,7 @@ Use of a lambda expression that is supported in Java8
 Example of a custom Sling-Model implementation, that is picked up from the core components.
 
 ### [CompositeValueMap](/core/src/main/java/com/adobe/examples/htl/core/models/CompositeValueMapModel.java)
-Example on using the CompositeValueMap to merge properties of two ValueMaps
+Example of using the CompositeValueMap to merge properties of two ValueMaps
+
+### [HealthCheck](/core/src/main/java/com/adobe/examples/htl/core/hc/HealthCheckExample.java)
+Example of a basic healtcheck, that can be executed from the OSGi-console
