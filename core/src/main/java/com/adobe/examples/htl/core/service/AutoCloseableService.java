@@ -15,7 +15,9 @@ public class AutoCloseableService {
 	
 	@SuppressWarnings("deprecation")
 	public String getValue() {
-		
+
+		// Auto-closing ResourceResolvers were made available in Sling 8 (and thus AEM 6.2)
+		// If your code made be run on older Sling/AEM stacks, ensure you manually close any ResourceResolver you open.
 		try (ResourceResolver rr = repo.getAdministrativeResourceResolver(null)) {
 			return rr.getUserID();
 		} catch (LoginException e) {
