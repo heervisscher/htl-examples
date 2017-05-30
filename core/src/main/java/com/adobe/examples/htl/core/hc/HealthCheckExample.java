@@ -30,7 +30,7 @@ public class HealthCheckExample implements HealthCheck {
 			if (mySimpleService.isAuthor()) {
 				resultLog.info("Code is executed on author {}", mySimpleService.isAuthor());
 			} else {
-				resultLog.critical("Code is executed on author {}", mySimpleService.isAuthor());
+				resultLog.critical("Code is executed on publish {}", !mySimpleService.isAuthor());
 			}
 		} else {
 			resultLog.critical("Not able to inject MySimpleService");
