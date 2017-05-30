@@ -11,7 +11,7 @@ import com.adobe.examples.htl.core.service.MySimpleService;
 @Component(service = HealthCheck.class, 
 property = { HealthCheck.NAME + "=HCExample",
 		     HealthCheck.TAGS + "=hcexample", 
-		     HealthCheck.MBEAN_NAME + "=Example health check" })
+		     HealthCheck.MBEAN_NAME + "=hcexample" })
 public class HealthCheckExample implements HealthCheck {
 	
 	// use this url to execute it in the console
