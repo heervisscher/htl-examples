@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"  xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+	sling:configCollectionInherit="true"
+    jcr:primaryType="sling:Folder">
+    <healthcheck_example jcr:primaryType="nt:unstructured"
+    name="healthcheck_example"
+    resource="/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/hcexample" 
+    sling:resourceType="granite/operations/components/mbean"  />    
+</jcr:root>

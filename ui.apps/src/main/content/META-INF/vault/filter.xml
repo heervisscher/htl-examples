@@ -4,5 +4,6 @@
         <exclude pattern="/apps/aemhtlexamples/install" />
     </filter>
     <filter root="/apps/sling" />
+    <filter root="/apps/settings/granite/operations/hc" />    
     <filter root="/etc/designs/aemhtlexamples"/>
 </workspaceFilter>
