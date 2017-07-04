@@ -16,6 +16,9 @@ public class HealthCheckExample implements HealthCheck {
 	
 	// use this url to execute it in the console
 	// /system/console/healthcheck?tags=hcexample&debug=true&overrideGlobalTimeout=
+	
+	// you can also see the healthcheck in the operations dashbaord
+	// /libs/granite/operations/content/healthreports/healthreportlist.html
 
 	@Reference
 	private MySimpleService mySimpleService;
