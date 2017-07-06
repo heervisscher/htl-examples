@@ -58,7 +58,7 @@ Example of a custom Sling-Model implementation, that is picked up from the core 
 Example of using the CompositeValueMap to merge properties of two ValueMaps
 
 ### [HealthCheck](/core/src/main/java/com/adobe/examples/htl/core/hc/HealthCheckExample.java)
-Example of a basic healtcheck, that can be executed from the OSGi-console
+Example of a basic healthcheck, that can be executed from the OSGi-console
 
 ### [HealthCheck card example](/ui.apps/src/main/content/jcr_root/apps/settings/granite/operations/hc/.content.xml)
 Shows how to display a healthcheck card in the operations dashboard. To extend the default collection of healthchecks you need to use sling:configCollectionInherit on the /apps/settings/granite/operations/hc node
