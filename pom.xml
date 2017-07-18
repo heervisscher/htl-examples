@@ -477,6 +477,13 @@
 				<version>5.7.4</version>
 				<scope>provided</scope>
 			</dependency>
+			<!-- Core Components -->
+			<dependency>
+				<groupId>com.adobe.cq</groupId>
+				<artifactId>core.wcm.components.core</artifactId>
+				<version>1.0.4</version>
+				<scope>provided</scope>
+			</dependency>
 			<!-- Testing -->
 			<dependency>
 				<groupId>junit</groupId>

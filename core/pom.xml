@@ -134,5 +134,11 @@
 			<classifier>apis</classifier>
 		</dependency>
 
-	</dependencies>
+		<!-- Core Components -->
+        <dependency>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.wcm.components.core</artifactId>
+        </dependency>
+
+    </dependencies>
 </project>
