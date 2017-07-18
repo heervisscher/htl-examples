@@ -131,6 +131,19 @@
 							<target>/apps/aemhtlexamples/install</target>
 						</embedded>
 					</embeddeds>
+					<!--
+					Normally this would be added as a sub-package to the common AEM application project to ensure the correct version is deployed as part of this application deployment.
+
+					Commenting this out so as deploying this does not inadvertently break a real project; however this means the AEM WCM Core Components package must be installed manually for this bundle to resolve.
+
+					<subPackages>
+						<subPackage>
+							<groupId>com.adobe.cq</groupId>
+							<artifactId>core.wcm.components.content</artifactId>
+							<filter>true</filter>
+						</subPackage>
+					</subPackages>
+					-->
 				</configuration>
 			</plugin>
 		</plugins>
