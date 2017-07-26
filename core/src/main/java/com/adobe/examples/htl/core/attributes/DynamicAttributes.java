@@ -7,7 +7,8 @@ import com.adobe.cq.sightly.WCMUsePojo;
 
 // HTL-code
 // <element data-sly-use.meta="com.adobe.examples.htl.core.attributes.DynamicAttributes" data-sly-element="${meta.elementName}" data-sly-attribute="${meta.attributes}"></element>
-
+// if you also want to print non-whitelisted elements
+// <element data-sly-use.meta="com.adobe.examples.htl.core.attributes.DynamicAttributes" data-sly-element="${meta.elementName @ context='unsafe'}" data-sly-attribute="${meta.attributes}"></element>
 
 public class DynamicAttributes extends WCMUsePojo {
 	
@@ -21,7 +22,7 @@ public class DynamicAttributes extends WCMUsePojo {
 		attributes.put("title", "this is the title");
 		attributes.put("alt", "alt text");
 		
-		elementName = "div";
+		elementName = "meta";
 
 	}
 
