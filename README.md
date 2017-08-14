@@ -62,3 +62,6 @@ Example of a basic healthcheck, that can be executed from the OSGi-console
 
 ### [HealthCheck card example](/ui.apps/src/main/content/jcr_root/apps/settings/granite/operations/hc/.content.xml)
 Shows how to display a healthcheck card in the operations dashboard. To extend the default collection of healthchecks you need to use sling:configCollectionInherit on the /apps/settings/granite/operations/hc node
+
+### [Custom Polling](/core/src/main/java/com/adobe/examples/htl/core/polling/CustomPolling.java)
+Example of a custom poller that gets executed based on the information in the cq:PollConfig node. 
