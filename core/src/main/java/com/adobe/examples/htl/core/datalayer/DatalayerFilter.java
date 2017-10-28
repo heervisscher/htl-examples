@@ -19,8 +19,9 @@ import org.slf4j.LoggerFactory;
 
 import com.adobe.acs.commons.util.BufferingResponse;
 
-@SlingFilter(label = "ACS AEM Samples - Sling REQUEST Filter",
-description = "Sample implementation of a Sling Filter",
+@SlingFilter(label = "Datalayer move filter",
+description = "Moving JS-fragments from the body to the head",
+metatype = true,
 generateComponent = true, // True if you want to leverage activate/deactivate or manage its OSGi life-cycle
 generateService = true, // True; required for Sling Filters
 order = 0, // The smaller the number, the earlier in the Filter chain (can go negative);
@@ -29,10 +30,19 @@ scope = SlingFilterScope.REQUEST)
 public class DatalayerFilter implements Filter {
 	private static final Logger log = LoggerFactory.getLogger(DatalayerFilter.class);
 
+	/**
+	 * This is the begin-placeholder for a JS-fragments that needs to be moved
+	 */
 	public static final String BEGIN = "<!-- datalayer_move_to_head -->";
 
+	/**
+	 * This is the end-placeholder for a JS-fragments that needs to be moved
+	 */
 	public static final String END = "<!-- datalayer_move_to_head_end -->";
 	
+	/**
+	 * This is the placeholder where the JS-fragments need to be moved to
+	 */
 	public static final String REPLACE = "<!-- datalayer_move_code_here -->";
 
 	@Override
@@ -70,8 +80,9 @@ public class DatalayerFilter implements Filter {
 
 			if (bodyIndex != -1) {
 				
-				log.info("There is datalayer_move_to_head");
+				log.info("There is a datalayer_move_to_head");
 
+				// gettng the fragments that need to be moved
 				String[] jsToBeMoved = StringUtils.substringsBetween(contents, BEGIN, END);
 				String modifiedContents = contents;
 
@@ -80,12 +91,15 @@ public class DatalayerFilter implements Filter {
 					String headCode = "";
 					for (int i = 0; i < jsToBeMoved.length; i++) {
 						headCode += jsToBeMoved[i];
+						
+						// remove the fragments
 						modifiedContents = StringUtils.replace(modifiedContents, BEGIN + jsToBeMoved[i] + END, "");
 						
 					}
 					
 					log.info("Complete code to move {}", headCode);
 
+					// move all the JS-fragments
 					modifiedContents = StringUtils.replace(modifiedContents, REPLACE, headCode);
 
 					response.getWriter().write(modifiedContents);
