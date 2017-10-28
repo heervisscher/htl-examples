@@ -65,3 +65,7 @@ Shows how to display a healthcheck card in the operations dashboard. To extend t
 
 ### [Custom Polling](/core/src/main/java/com/adobe/examples/htl/core/polling/CustomPolling.java)
 Example of a custom poller that gets executed based on the information in the cq:PollConfig node. 
+
+### [Datalayer mover](/core/src/main/java/com/adobe/examples/htl/core/datalayer/DatalayerFilter.java)
+Common problem when defining a datalayer is that the JS-fragments are in the body,
+while some of those need to be in the head. This filter is moving JS-fragments from the body into the head.
