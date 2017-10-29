@@ -23,7 +23,7 @@ import com.adobe.acs.commons.util.BufferingResponse;
 /**
  * Filter that moves JS-fragments from the datalayer from the body to the head.
  * JS-fragments that need to be moved can be wrapped with the following HTML-comments:
- * <!-- datalayer_move_to_head --> .... "<!-- datalayer_move_to_head_end -->
+ * <!-- datalayer_move_to_head --> .... <!-- datalayer_move_to_head_end -->
  * In the head-element you have this placeholder where the JS-fragment should be moved to:
  * <!-- datalayer_move_code_here -->
  *
