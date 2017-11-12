@@ -217,7 +217,7 @@
 				<plugin>
 					<groupId>com.day.jcr.vault</groupId>
 					<artifactId>content-package-maven-plugin</artifactId>
-					<version>0.0.24</version>
+					<version>0.5.24</version>
 					<configuration>
 						<targetURL>http://${aem.host}:${aem.port}/crx/packmgr/service.jsp</targetURL>
 						<failOnError>true</failOnError>
@@ -228,9 +228,9 @@
 				<plugin>
 					<groupId>org.apache.felix</groupId>
 					<artifactId>maven-bundle-plugin</artifactId>
-					<version>3.2.0</version>
+					<version>3.3.0</version>
 					<inherited>true</inherited>
-					<!-- use 3.2.0 to use the new annotations -->
+					<!-- use 3.2.0 or higher to use the new annotations -->
 				</plugin>
 				<!-- Maven Enforcer Plugin -->
 				<plugin>
