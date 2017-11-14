@@ -484,6 +484,13 @@
 				<version>1.1.0</version>
 				<scope>provided</scope>
 			</dependency>
+
+			<dependency>
+				<groupId>com.adobe.acs</groupId>
+				<artifactId>acs-aem-commons-bundle</artifactId>
+				<version>3.8.4</version>
+			</dependency>
+
 			<!-- Testing -->
 			<dependency>
 				<groupId>junit</groupId>
