@@ -1,5 +1,6 @@
 package com.adobe.examples.htl.core.linkedlist;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -22,7 +23,7 @@ public class MiniNav extends WCMUsePojo {
 	private List<MiniNavBean> navList = new LinkedList<MiniNavBean>();
 
 	private MiniNavBean miniNav;
-
+	
 	public List<MiniNavBean> getNavList() {
 		return navList;
 	}

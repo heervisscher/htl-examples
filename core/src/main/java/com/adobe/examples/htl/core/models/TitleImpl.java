@@ -1,10 +1,11 @@
 package com.adobe.examples.htl.core.models;
 
-import com.adobe.cq.wcm.core.components.models.Constants;
-import com.adobe.cq.wcm.core.components.models.Title;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
+
+import com.adobe.cq.wcm.core.components.models.Constants;
+import com.adobe.cq.wcm.core.components.models.Title;
 
 /**
  * This is an implementation of the Title-model.

@@ -8,7 +8,9 @@ public interface PageExporter {
 
 	String getName();
 	
-	List<PageExporter> getChildren();
+	List<PageExporter> getChildPages();
+	
+	List<Object> getChildren();
 	
 	String getPath();
 	
