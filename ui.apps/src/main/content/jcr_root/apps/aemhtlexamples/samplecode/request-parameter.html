@@ -1,3 +1,5 @@
 <!--/* Example to show how to retrieve a request-parameter */-->
 
 ${request.requestParameterMap['test'][0].toString}
+
+<!-- NOTE: Since 6.3.1.1 this is failing when there is NO test url-parameter -->
