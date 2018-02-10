@@ -4,4 +4,5 @@ ${request.requestParameterMap['test'][0].toString}
 
 <!-- NOTE: Since 6.3.1.1 this is failing when there is NO test url-parameter
 This is confirmed as bug, most likely fixed in 6.3 SP2
-https://issues.apache.org/jira/browse/SLING-7404 -->
+https://issues.apache.org/jira/browse/SLING-7404
+Possible workaround: ${!request.requestParameterMap['test'] ? '' :  request.requestParameterMap['test'][0].toString} -->
