@@ -2,7 +2,7 @@
 AEM HTL examples
 
 ### AEM compatibility
-The package is only compatible with AEM6.3 SP1, this because new features are used that are only available in AEM6.3.1.0
+The package is only compatible with AEM6.3 SP1 and later, this because new features are used that are only available in AEM6.3.1.0
 - Exporter (sling-models)
 - getInheritedPageProperties() in WCMUsePojo
 - getLanguage() in Page-api
