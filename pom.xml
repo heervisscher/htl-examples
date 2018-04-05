@@ -415,11 +415,13 @@
 				<scope>provided</scope>
 			</dependency>
 
-			<!-- dependency for AEM6.3 SP1 -->
+			<!-- dependency for AEM6.4
+			Please check for other dependencies: https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/
+			 -->
 			<dependency>
 				<groupId>com.adobe.aem</groupId>
 				<artifactId>uber-jar</artifactId>
-				<version>6.3.1</version>
+				<version>6.4.0</version>
 				<classifier>apis</classifier>
 				<scope>provided</scope>
 			</dependency>
