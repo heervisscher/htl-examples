@@ -58,4 +58,9 @@ public class HelloWorldModel {
     	log.info("Inside getMessage() method");
         return message;
     }
+    
+    public String getResourceType() {
+    	   return resourceType;
+    }
+
 }
