@@ -69,3 +69,6 @@ Example of a custom poller that gets executed based on the information in the cq
 ### [Datalayer mover](/core/src/main/java/com/adobe/examples/htl/core/datalayer/DatalayerFilter.java)
 Common problem when defining a datalayer is that the JS-fragments are in the body,
 while some of those need to be in the head. This filter is moving JS-fragments from the body into the head.
+
+### [Flexible adapters](/ui.apps/src/main/content/jcr_root/apps/aemhtlexamples/components/aem6.3/flexibleadaptable/example.html)
+Shows on how to have a flexible way ot using adapters, instead of always the same resource. Available since 6.3.1.1
