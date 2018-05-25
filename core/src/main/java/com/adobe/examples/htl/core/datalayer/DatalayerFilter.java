@@ -31,7 +31,7 @@ import com.adobe.acs.commons.util.BufferingResponse;
 @Component(service = Filter.class, 
    name = "Datalayer move filter",
    property = { "sling.filter.scope=REQUEST",
-   Constants.SERVICE_RANKING + ":Integer=0" })
+   Constants.SERVICE_RANKING + ":Integer=1" })
 public class DatalayerFilter implements Filter {
 	private static final Logger log = LoggerFactory.getLogger(DatalayerFilter.class);
 
