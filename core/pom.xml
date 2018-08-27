@@ -133,8 +133,6 @@
 			<artifactId>slf4j-api</artifactId>
 		</dependency>
 
-
-		<!-- AEM6.3 uber-jar -->
 		<dependency>
 			<groupId>com.adobe.aem</groupId>
 			<artifactId>uber-jar</artifactId>
