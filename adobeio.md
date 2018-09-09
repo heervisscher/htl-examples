@@ -8,6 +8,12 @@ The values need to be copied for the integration on https://console.adobe.io.
 The private key needs to be copied include the header and footer lines (BEGIN PRIVATE KEY / END PRIVATE KEY)
 Login claims can be found under the JWT-tab, values are like https://ims-na1.adobelogin.com/s/ent_campaign_sdk
 
+![Adobe I/O Integration](adobeio-configuration.jpg)
+
 Once this is done, you can configure the endpoints you want to use, an example is displayed here.
 
+![Endpoint configuration](adobeio-endpoint-config.jpg)
+
 After all these configurations you can use the healthcheck (/system/console/healthcheck) 'adobeio' to test this all.
+
+![Adobe I/O healthcheck](adobeio-healthcheck.jpg)
