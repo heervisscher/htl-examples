@@ -9,3 +9,5 @@ The private key needs to be copied include the header and footer lines (BEGIN PR
 Login claims can be found under the JWT-tab, values are like https://ims-na1.adobelogin.com/s/ent_campaign_sdk
 
 Once this is done, you can configure the endpoints you want to use, an example is displayed here.
+
+After all these configurations you can use the healthcheck (/system/console/healthcheck) 'adobeio' to test this all.
