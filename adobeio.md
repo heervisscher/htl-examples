@@ -18,7 +18,7 @@ After all these configurations you can use the healthcheck (/system/console/heal
 
 ![Adobe I/O healthcheck](adobeio-healthcheck.jpg)
 
-How to use this in your code?
+## How to use this in your code?
 
 When you have defined your endpoints you can use them inside your code like this
 
