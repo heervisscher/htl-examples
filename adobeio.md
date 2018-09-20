@@ -17,3 +17,12 @@ Once this is done, you can configure the endpoints you want to use, an example i
 After all these configurations you can use the healthcheck (/system/console/healthcheck) 'adobeio' to test this all.
 
 ![Adobe I/O healthcheck](adobeio-healthcheck.jpg)
+
+How to use this in your code?
+
+When you have defined your endpoints you can use them inside your code like this
+
+    @Reference(target = "(id=getCampaignData)") .  
+    private EndpointService endpointService;
+
+ Once you have the reference to the EndpointService you can execute the Adobe I/O api calls.
