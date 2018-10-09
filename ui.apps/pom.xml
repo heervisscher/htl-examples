@@ -96,7 +96,7 @@
 				<!-- docpage here: https://sling.apache.org/documentation/development/htl-maven-plugin.html -->
 				<groupId>org.apache.sling</groupId>
 				<artifactId>htl-maven-plugin</artifactId>
-				<version>1.0.8</version>
+				<version>1.2.0-1.4.0</version>
 				<configuration>
 					<sourceDirectory>${basedir}/src/main/content/jcr_root</sourceDirectory>
 					<failOnWarnings>false</failOnWarnings>
