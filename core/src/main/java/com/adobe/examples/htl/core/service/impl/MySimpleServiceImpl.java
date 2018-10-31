@@ -13,9 +13,11 @@ import com.adobe.examples.htl.core.service.MySimpleService;
 @Designate(ocd = MyServiceConfiguration.class)
 public class MySimpleServiceImpl implements MySimpleService {
 	
-	// to use the OSGi annotations
-	// use version 3.2.0 of maven-bundle-plugin
+	// to use the r7 OSGi annotations
+	// use version 4.1.0 of maven-bundle-plugin
+	// use version 1.4.0 of org.osgi.service.component.annotations
 
+	@Activate
 	private MyServiceConfiguration config;
 	
 	private boolean author;
@@ -25,7 +27,6 @@ public class MySimpleServiceImpl implements MySimpleService {
 
 	@Activate
 	public void activate(MyServiceConfiguration config) {
-		this.config = config;
 		author = settings.getRunModes().contains("author");
 	}
 
