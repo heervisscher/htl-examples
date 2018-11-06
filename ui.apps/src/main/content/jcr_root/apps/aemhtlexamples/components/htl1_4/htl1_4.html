@@ -8,6 +8,8 @@ ${pagename}
  <li>${children.name}</li>
 </ul>
 
-<div data-sly-test="${currentPage.name in 'en,fr'}">
+<div data-sly-use.constants="com.adobe.examples.htl.core.use.Constants" data-sly-test="${currentPage.name in constants.values}">
 en or fr page
 </div>
+
+
