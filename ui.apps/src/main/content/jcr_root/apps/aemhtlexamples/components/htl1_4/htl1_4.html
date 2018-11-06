@@ -1,0 +1,13 @@
+<!-- HTL 1.4 spec : https://github.com/Adobe-Marketing-Cloud/htl-spec/releases/tag/1.4  -->
+
+<div daya-sly-set.pagename="${currentPage.name}">
+${pagename}
+</div>
+
+<ul data-sly-list.children="${currentPage.listChildren @ begin = 1, step=2}">
+ <li>${children.name}</li>
+</ul>
+
+<div data-sly-test="${currentPage.name in 'en,fr'}">
+en or fr page
+</div>
