@@ -2,9 +2,16 @@
 AEM HTL examples
 
 ### AEM compatibility
-The package is only compatible with AEM6.4 SP2 and later
+The package is only compatible with AEM6.4 SP2 and later.
+It uses OSGi r7 annotations and HTL 1.4 syntax
 
 ## Included examples
+
+### [OSGi R7](/core/src/main/java/com/adobe/examples/htl/core/service/impl/MySimpleServiceImpl.java)
+Example use of OSGi r7 annotations
+
+### [HTL 1.4](/ui.apps/src/main/content/jcr_root/apps/aemhtlexamples/components/htl1_4/htl1_4.html)
+Some example usages of HTL 1.4 syntax
 
 ### [CustomBindingProvider](/core/src/main/java/com/adobe/examples/htl/core/bindings/CustomBindingProvider.java)
 Provides an example of a CustomBindingProvider, this if you want generic objects available in HTL
