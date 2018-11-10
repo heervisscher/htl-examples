@@ -22,6 +22,8 @@ public class MySimpleServiceImpl implements MySimpleService {
 	// to use the r7 OSGi annotations
 	// use version 4.1.0 of maven-bundle-plugin
 	// use version 1.4.0 of org.osgi.service.component.annotations
+	// use version 1.4.0 of org.osgi.service.metatype.annotations
+	// use version 1.4.0 of org.osgi.service.component
 
 	@Activate
 	private MyServiceConfiguration config;
