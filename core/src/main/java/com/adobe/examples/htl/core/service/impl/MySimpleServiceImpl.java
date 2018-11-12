@@ -25,7 +25,7 @@ public class MySimpleServiceImpl implements MySimpleService {
 	// use version 1.4.0 of org.osgi.service.metatype.annotations
 	// use version 1.4.0 of org.osgi.service.component
 
-	@Activate
+	@Activate 
 	private MyServiceConfiguration config;
 	
 	private boolean author;
