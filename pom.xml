@@ -230,7 +230,8 @@
 					<artifactId>maven-bundle-plugin</artifactId>
 					<version>4.1.0</version>
 					<inherited>true</inherited>
-					<!-- use 3.2.0 or higher to use the new annotations -->
+					<!-- use 3.2.0 or higher to use the R6 annotations -->
+					<!-- use 4.1.0 or higher yo use the R7 annotations -->
 				</plugin>
 				<!-- Maven Enforcer Plugin -->
 				<plugin>
