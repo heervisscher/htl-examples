@@ -227,7 +227,6 @@
 			<groupId>com.adobe.cq</groupId>
 			<artifactId>core.wcm.components.all</artifactId>
 			<type>zip</type>
-			<version>2.1.0</version>
 		</dependency>
 
 		<dependency>
