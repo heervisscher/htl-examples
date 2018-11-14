@@ -492,8 +492,15 @@
 			<dependency>
 				<groupId>com.adobe.cq</groupId>
 				<artifactId>core.wcm.components.core</artifactId>
-				<version>1.1.0</version>
+				<version>2.2.0</version>
 				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.adobe.cq</groupId>
+				<artifactId>core.wcm.components.all</artifactId>
+				<type>zip</type>
+				<version>2.2.0</version>
 			</dependency>
 
 			<dependency>
