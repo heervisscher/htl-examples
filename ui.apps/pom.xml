@@ -136,12 +136,12 @@
 							<artifactId>acs-aem-commons-bundle</artifactId>
 							<target>/apps/aemhtlexamples/install</target>
 						</embedded>
+						<embedded>
+							<groupId>com.adobe.cq</groupId>
+							<artifactId>core.wcm.components.all</artifactId>
+							<target>/apps/aemhtlexamples/install</target>
+						</embedded>
 					</embeddeds>
-					<subPackage>
-						<groupId>com.adobe.cq</groupId>
-						<artifactId>core.wcm.components.all</artifactId>
-						<filter>true</filter>
-					</subPackage>
 
 					<!-- Normally this would be added as a sub-package to the common AEM 
 						application project to ensure the correct version is deployed as part of 
@@ -221,6 +221,13 @@
 			<groupId>com.adobe.examples</groupId>
 			<artifactId>htl.core</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.adobe.cq</groupId>
+			<artifactId>core.wcm.components.all</artifactId>
+			<type>zip</type>
+			<version>2.1.0</version>
 		</dependency>
 
 		<dependency>
