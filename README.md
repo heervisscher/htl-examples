@@ -1,9 +1,10 @@
 # htl-examples
-AEM HTL examples
 
 ### AEM compatibility
 The package is only compatible with AEM6.4 SP2 and later.
-It uses OSGi r7 annotations and HTL 1.4 syntax
+It uses OSGi r7 annotations and HTL 1.4 syntax.  
+Uses aem core components: https://github.com/adobe/aem-core-wcm-components/  
+aem acs commoms: https://github.com/Adobe-Consulting-Services/acs-aem-commons/
 
 ## Included examples
 
