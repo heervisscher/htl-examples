@@ -29,7 +29,7 @@ Example on using Exporter-annotation with Sling-Models
 ### [Request parameter](/ui.apps/src/main/content/jcr_root/apps/aemhtlexamples/samplecode/request-parameter.html)
 How to get a request parameter in HTL
 
-### [htl-maven-plugin](/ui.apps/pom.xml)
+### [htl-maven-plugin](/ui.apps/pom.xml#L98-L99)
 Validating HTL-files during build process
 
 ### [AutoCloseable](/core/src/main/java/com/adobe/examples/htl/core/service/AutoCloseableService.java)
