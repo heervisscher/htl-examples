@@ -17,6 +17,6 @@ public @interface MyServiceConfiguration {
 	int getNumberValue();
 	
 	@AttributeDefinition(description = "Single Configuration value")
-	String my_property_name();	
+	String my_property_name(); // gets to my.property.name
 
 }
