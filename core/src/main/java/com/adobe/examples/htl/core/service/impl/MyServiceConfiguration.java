@@ -10,10 +10,13 @@ public @interface MyServiceConfiguration {
 	@AttributeDefinition(name = "Config Value", description = "Configuration value")
 	String configValue();
 	
-	@AttributeDefinition(name = "MultipleValues", description = "Multi Configuration values")
+	@AttributeDefinition(name = "Multiple-Values", description = "Multi Configuration values")
 	String[] getStringValues();
 	
 	@AttributeDefinition(name = "NumberValue", description = "Number values", type=AttributeType.INTEGER)
 	int getNumberValue();
 	
+	@AttributeDefinition(description = "Single Configuration value")
+	String my_property_name();	
+
 }
