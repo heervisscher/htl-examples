@@ -10,6 +10,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import static org.apache.sling.engine.EngineConstants.*;
 
 import org.apache.commons.lang3.StringUtils;
 import org.osgi.framework.Constants;
@@ -30,7 +31,7 @@ import com.adobe.acs.commons.util.BufferingResponse;
  */
 @Component(service = Filter.class, 
    name = "Datalayer move filter",
-   property = { "sling.filter.scope=REQUEST",
+   property = { SLING_FILTER_SCOPE + "=" + FILTER_SCOPE_REQUEST,
    Constants.SERVICE_RANKING + ":Integer=1" })
 public class DatalayerFilter implements Filter {
 	private static final Logger log = LoggerFactory.getLogger(DatalayerFilter.class);
